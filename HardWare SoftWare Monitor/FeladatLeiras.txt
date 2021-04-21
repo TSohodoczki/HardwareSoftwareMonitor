@@ -1,0 +1,9 @@
+6. projekt
+HardWare SoftWare Monitor (Számítógép adatainak összegzése, mentése)
+Milyen hardware elemek vannak a gépben? (driver?)
+Érzékelők aktuális értéke? (Akár élőben monitorozva, megjelenítve)
+Telepített szoftverek listája
+Név
+Telepített verzió
+Van-e újabb? (csak egy pár gyakori programnál!)
+Fontos az adatok tárolása, exportálása, importálási lehetősége (csv, xlsx)!
