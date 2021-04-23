@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("save.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cancel-button-purple.png")]
 
 

@@ -130,5 +130,14 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="torles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cancel-button-purple.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,56 +11,63 @@
     </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="597*"/>
-            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="110*"/>
         </Grid.ColumnDefinitions>
-        <TabControl SelectionChanged="TabControl_SelectionChanged" Grid.ColumnSpan="2">
+        <TabControl SelectionChanged="TabControl_SelectionChanged" Grid.ColumnSpan="2" RenderTransformOrigin="0.431,0.76">
             <TabControl.Background>
                 <ImageBrush ImageSource="background.jpg" Opacity="0.3"/>
             </TabControl.Background>
             <TabItem Name="Info" Header="Infó">
                 <Grid>
+                    <Grid.Background>
+                        <ImageBrush/>
+                    </Grid.Background>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="47*"/>
+                        <ColumnDefinition Width="741*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Content="Felhasználó neve:" HorizontalAlignment="Left" Height="34" Margin="0,30,0,0" VerticalAlignment="Top" Width="108" Foreground="White"/>
-                    <Label Content="Verzió:" HorizontalAlignment="Left" Height="34" Margin="0,64,0,0" VerticalAlignment="Top" Width="108" Foreground="White"/>
-                    <Label Content="Operációs rendszer platformja:" HorizontalAlignment="Left" Height="34" Margin="0,98,0,0" VerticalAlignment="Top" Width="183" Foreground="White"/>
-                    <Label Content="Processzor szálak száma:" HorizontalAlignment="Left" Height="34" Margin="0,137,0,0" VerticalAlignment="Top" Width="153" Foreground="White"/>
-                    <Label Content="Számítógép neve:" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="108" Foreground="White"/>
-                    <Button x:Name="gomb_1" Content="" HorizontalAlignment="Left" Height="74" Margin="18,282,0,0" VerticalAlignment="Top" Width="155" Click="gomb_1_Click" BorderBrush="{x:Null}">
-
+                    <Label Content="Felhasználó neve:" HorizontalAlignment="Left" Height="34" Margin="0,30,0,0" VerticalAlignment="Top" Width="108" Foreground="White" Grid.ColumnSpan="2"/>
+                    <Label Content="Verzió:" HorizontalAlignment="Left" Height="34" Margin="0,64,0,0" VerticalAlignment="Top" Width="108" Foreground="White" Grid.ColumnSpan="2"/>
+                    <Label Content="Operációs rendszer platformja:" HorizontalAlignment="Left" Height="34" Margin="0,98,0,0" VerticalAlignment="Top" Width="183" Foreground="White" Grid.ColumnSpan="2"/>
+                    <Label Content="Processzor szálak száma:" HorizontalAlignment="Left" Height="34" Margin="0,137,0,0" VerticalAlignment="Top" Width="153" Foreground="White" Grid.ColumnSpan="2"/>
+                    <Label Content="Számítógép neve:" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="108" Foreground="White" Grid.ColumnSpan="2"/>
+                    <Button x:Name="gomb_1" Content="" HorizontalAlignment="Left" Height="74" Margin="18,282,0,0" VerticalAlignment="Top" Width="155" Click="gomb_1_Click" BorderBrush="{x:Null}" Grid.ColumnSpan="2">
                         <Button.Background>
-                            <ImageBrush ImageSource="control.png" Stretch="Uniform"/>
+                            <ImageBrush ImageSource="control.png" Stretch="UniformToFill"/>
                         </Button.Background>
                     </Button>
-                    <Button x:Name="gomb_2" Content="" HorizontalAlignment="Left" Height="74" Margin="282,282,0,0" VerticalAlignment="Top" Width="204" Click="gomb_2_Click" BorderBrush="{x:Null}">
+                    <Button x:Name="gomb_2" Content="" HorizontalAlignment="Left" Height="74" Margin="235,282,0,0" VerticalAlignment="Top" Width="204" Click="gomb_2_Click" BorderBrush="{x:Null}" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="torles.png" Stretch="Uniform"/>
                         </Button.Background>
                     </Button>
-                    <TextBox x:Name="text_1" HorizontalAlignment="Left" Height="19" Margin="181,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True"/>
-                    <TextBox x:Name="text_2" HorizontalAlignment="Left" Height="19" Margin="181,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True"/>
-                    <TextBox x:Name="text_3" HorizontalAlignment="Left" Height="19" Margin="181,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True"/>
-                    <TextBox x:Name="text_5" HorizontalAlignment="Left" Height="19" Margin="181,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True"/>
-                    <TextBox x:Name="text_6" HorizontalAlignment="Left" Height="19" Margin="181,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White"/>
-                    <Label Content="Lekérdezés" HorizontalAlignment="Left" Height="34" Margin="55,366,0,-9" VerticalAlignment="Top" Width="108" Foreground="White"/>
-                    <Label Content="Törlés" HorizontalAlignment="Left" Height="34" Margin="360,366,0,-9" VerticalAlignment="Top" Width="108" Foreground="White"/>
-                    <Label Content="Kilépés" HorizontalAlignment="Left" Height="34" Margin="704,366,-26,-9" VerticalAlignment="Top" Width="108" Foreground="White"/>
-                    <TextBox x:Name="text_7" HorizontalAlignment="Left" Height="19" Margin="181,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White"/>
-                    <Label Content="Program mappája:" HorizontalAlignment="Left" Height="34" Margin="0,168,0,0" VerticalAlignment="Top" Width="153" Foreground="White"/>
-                    <TextBox x:Name="text_8" HorizontalAlignment="Left" Height="19" Margin="181,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White"/>
-                    <Label Content="Rendszer mappája:" HorizontalAlignment="Left" Height="34" Margin="0,202,0,0" VerticalAlignment="Top" Width="153" Foreground="White"/>
-                    <TextBox x:Name="text_9" HorizontalAlignment="Left" Height="19" Margin="181,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White"/>
-                    <Label Content="Domain név:" HorizontalAlignment="Left" Height="34" Margin="0,236,0,0" VerticalAlignment="Top" Width="153" Foreground="White"/>
+                    <TextBox x:Name="text_1" HorizontalAlignment="Left" Height="19" Margin="134,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Grid.Column="1"/>
+                    <TextBox x:Name="text_2" HorizontalAlignment="Left" Height="19" Margin="134,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Grid.Column="1"/>
+                    <TextBox x:Name="text_3" HorizontalAlignment="Left" Height="19" Margin="134,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Grid.Column="1"/>
+                    <TextBox x:Name="text_5" HorizontalAlignment="Left" Height="19" Margin="134,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Grid.Column="1"/>
+                    <TextBox x:Name="text_6" HorizontalAlignment="Left" Height="19" Margin="134,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White" Grid.Column="1"/>
+                    <Label Content="Lekérdezés" HorizontalAlignment="Left" Height="34" Margin="8,366,0,-7" VerticalAlignment="Top" Width="108" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Törlés" HorizontalAlignment="Left" Height="34" Margin="313,366,0,-7" VerticalAlignment="Top" Width="108" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Kilépés" HorizontalAlignment="Left" Height="34" Margin="657,366,-24,-7" VerticalAlignment="Top" Width="108" Foreground="White" Grid.Column="1"/>
+                    <TextBox x:Name="text_7" HorizontalAlignment="Left" Height="19" Margin="134,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White" Grid.Column="1"/>
+                    <Label Content="Program mappája:" HorizontalAlignment="Left" Height="34" Margin="0,168,0,0" VerticalAlignment="Top" Width="153" Foreground="White" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="text_8" HorizontalAlignment="Left" Height="19" Margin="134,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White" Grid.Column="1"/>
+                    <Label Content="Rendszer mappája:" HorizontalAlignment="Left" Height="34" Margin="0,202,0,0" VerticalAlignment="Top" Width="153" Foreground="White" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="text_9" HorizontalAlignment="Left" Height="19" Margin="134,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" IsReadOnly="True" Background="White" Grid.Column="1"/>
+                    <Label Content="Domain név:" HorizontalAlignment="Left" Height="34" Margin="0,236,0,0" VerticalAlignment="Top" Width="153" Foreground="White" Grid.ColumnSpan="2"/>
 
                 </Grid>
 
             </TabItem>
             <TabItem Name="CPU" Header="CPU">
                 <Grid>
-                    <Button  Click="Button_Click" Content="A processzor adataink lekérdezése" Margin="306,118,309,146" Background="#FFB900FF" Foreground="White"  />
+                    <Button  Click="Button_Click" Content="A processzor adataink lekérdezése" Margin="294,171,291,165" Foreground="White"  >
+                        <Button.Background>
+                            <ImageBrush/>
+                        </Button.Background>
+                    </Button>
 
                 </Grid>
 
@@ -85,7 +92,7 @@
             </TabItem>
             <TabItem Name="Temp" Header="Mentés">
                 <Grid>
-                    <Label  Content="A gombot megnyomva  program egy excel táblában rögzíti majd az adatokat." Foreground="White" Background="{x:Null}" Margin="125,10,228,350"></Label>
+                    <Label  Content="A gombot megnyomva  program egy excel táblában rögzíti majd az adatokat." Foreground="White" Background="{x:Null}" Margin="125,0,228,337"></Label>
                     <Button x:Name="gomb_excel" HorizontalAlignment="Left" Height="43" Margin="620,0,0,0" VerticalAlignment="Top" Width="138" Click="gomb_excel_Click" BorderBrush="{x:Null}">
                         <Button.Background>
                             <ImageBrush ImageSource="save.png"/>
@@ -95,14 +102,8 @@
                 </Grid>
             </TabItem>
             <Label Content="Label" Height="100" Width="100"/>
-
-
-
-
-
         </TabControl>
         <Button x:Name="gomb_3_Copy1" Content="" Height="82" Margin="33,310,0,0" VerticalAlignment="Top" Click="gomb_3_Click" HorizontalAlignment="Left" Width="164" BorderBrush="{x:Null}" Grid.Column="1" >
-
             <Button.Background>
                 <ImageBrush ImageSource="cancel-button-purple.png" Stretch="Uniform"/>
             </Button.Background>
